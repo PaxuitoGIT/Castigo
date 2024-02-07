@@ -22,4 +22,14 @@ public class Ejercicio8 {
         }
         return suma / numeros.size();
     }
+
+    static int calcularMinimo(ArrayList<Integer> numeros) {
+        int minimo = numeros.get(0);
+        for (int num : numeros) {
+            if (num < minimo) {
+                minimo = num;
+            }
+        }
+        return minimo;
+    }
 }
