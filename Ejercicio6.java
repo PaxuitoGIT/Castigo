@@ -10,4 +10,18 @@ public class Ejercicio6 {
         }
         return true;
     }
+
+    static int[] generarPrimos(int N) {
+        int[] primos = new int[N];
+        int num = 2;
+        int count = 0;
+        while (count < N) {
+            if(esPrimo(num)) {
+                primos[count] = num;
+                count++;
+            }
+            num++;
+        }
+        return primos;
+    }
 }
