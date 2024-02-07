@@ -24,7 +24,7 @@ public class Ejercicio8 {
     }
 
     static int calcularMinimo(ArrayList<Integer> numeros) {
-        int minimo = numeros.get(0);
+        int minimo = numeros.getFirst();
         for (int num : numeros) {
             if (num < minimo) {
                 minimo = num;
@@ -34,12 +34,22 @@ public class Ejercicio8 {
     }
 
     static int calcularMaximo(ArrayList<Integer> numeros) {
-        int maximo = numeros.get(0);
+        int maximo = numeros.getFirst();
         for (int num : numeros) {
             if (num > maximo) {
                 maximo = num;
             }
         }
         return maximo;
+    }
+
+    public static void main (String[] args) {
+        ArrayList<Integer> numeros = recibirNumeros();
+        double media = calcularMedia(numeros);
+        int minimo = calcularMinimo(numeros);
+        int maximo = calcularMaximo(numeros);
+        System.out.println("La media es: " + media);
+        System.out.println("El mínimo es: " + minimo);
+        System.out.println("El máximo es: " + maximo);
     }
 }
