@@ -14,4 +14,12 @@ public class Ejercicio8 {
         } while (num != 0);
         return numeros;
     }
+
+    static double calcularMedia(ArrayList<Integer> numeros) {
+        double suma = 0;
+        for (int num : numeros) {
+            suma += num;
+        }
+        return suma / numeros.size();
+    }
 }
