@@ -1,4 +1,6 @@
 import java.util.Random;
+import java.util.Scanner;
+
 public class Ejercicio10 {
     static void generarEImprimirMatrizSimetrica(int n) {
         int[][] matriz = new int[n][n];
@@ -16,5 +18,12 @@ public class Ejercicio10 {
             }
             System.out.println();
         }
+    }
+
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Introduce el tamaño de la matriz:");
+        int n = scanner.nextInt();
+        generarEImprimirMatrizSimetrica(n);
     }
 }
