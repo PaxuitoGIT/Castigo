@@ -22,9 +22,14 @@ public class Ejercicio3 {
     public static void main(String[] args) {
         ArrayList<Integer> MultiploCinco = MultiplosDeCinco();
         System.out.println("Los múltiplos de 5 del 1 al 100 son:");
-        for (int multiplo : MultiploCinco) {
-            System.out.println(multiplo);
+        for (int i = 0; i < MultiploCinco.size(); i++) {
+            System.out.print(MultiploCinco.get(i));
+            if (i < MultiploCinco.size() - 1) {
+                System.out.print(", ");
+            }
         }
+        System.out.println();
+
         int suma = sumarArray(MultiploCinco);
         System.out.println("La suma de todos los múltiplos de 5 del 1 al 100 es: " + suma);
     }
