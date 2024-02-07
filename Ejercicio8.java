@@ -32,4 +32,14 @@ public class Ejercicio8 {
         }
         return minimo;
     }
+
+    static int calcularMaximo(ArrayList<Integer> numeros) {
+        int maximo = numeros.get(0);
+        for (int num : numeros) {
+            if (num > maximo) {
+                maximo = num;
+            }
+        }
+        return maximo;
+    }
 }
