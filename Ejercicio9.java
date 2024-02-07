@@ -17,4 +17,14 @@ public class Ejercicio9 {
         }
         return productoEscalar;
     }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Introduce el tamaño de los vectores:");
+        int n = scanner.nextInt();
+        int[] vector1 = leerVector(n);
+        int[] vector2 = leerVector(n);
+        int productoEscalar = calcularProductoEscalar(vector1, vector2);
+        System.out.println("El producto escalar de los vectores es: " + productoEscalar);
+    }
 }
