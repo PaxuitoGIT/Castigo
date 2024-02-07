@@ -9,4 +9,12 @@ public class Ejercicio9 {
         }
         return vector;
     }
+
+    static int calcularProductoEscalar(int[] vector1, int[] vector2) {
+        int productoEscalar = 0;
+        for (int i = 0; i < vector1.length; i++) {
+            productoEscalar += vector1[i] * vector2[i];
+        }
+        return productoEscalar;
+    }
 }
