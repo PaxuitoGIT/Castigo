@@ -1,5 +1,5 @@
-import java.sql.Array;
 import java.util.ArrayList;
+import java.util.Scanner;
 public class Ejercicio7 {
     static ArrayList<Integer> descomponerFactoresPrimos(int n) {
         ArrayList<Integer> factores = new ArrayList<>();
@@ -10,5 +10,17 @@ public class Ejercicio7 {
             }
         }
         return factores;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Introduce un número entero:");
+        int numero = scanner.nextInt();
+        ArrayList<Integer> factoresPrimos = descomponerFactoresPrimos(numero);
+        System.out.println("Los factores primos de " + numero + " son:");
+        for (int factor : factoresPrimos) {
+            System.out.println(factor);
+        }
+        scanner.close();
     }
 }
