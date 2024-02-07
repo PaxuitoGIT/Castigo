@@ -8,10 +8,9 @@ public class Ejercicio1 {
 
     static long calcularSegundos(int anios, int meses, int dias) {
         int totalDias = anios * dias_en_ano + meses * 30 + dias;
-        long totalHoras = totalDias * horas_en_dia;
+        long totalHoras = (long) totalDias * horas_en_dia;
         long totalMinutos = totalHoras * minutos_en_hora;
-        long totalSegundos = totalMinutos * segundos_en_minuto;
-        return totalSegundos;
+        return totalMinutos * segundos_en_minuto;
     }
 
     public static void main(String[] args) {
