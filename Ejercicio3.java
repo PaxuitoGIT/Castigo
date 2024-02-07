@@ -11,4 +11,12 @@ public class Ejercicio3 {
         }
         return multiplos;
     }
+
+    static int sumarArray(ArrayList<Integer> array) {
+        int suma = 0;
+        for (int numero : array) {
+            suma += numero;
+        }
+        return suma;
+    }
 }
